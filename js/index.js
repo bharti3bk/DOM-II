@@ -16,16 +16,13 @@ nav[0].addEventListener('mouseover', function (event) {
     event.target.style.color = 'Green';
   
  })    
+
  window.addEventListener('scroll', function(event) {
      window.alert("you are scrolling");   
  })  
 
-
-
-
-
  document.querySelector('body').addEventListener('keydown' , function (event){
-     event.targrt.style.background = 'aqua'; 
+     console.log("you have pressed the key");
  })  
 
  document.querySelector('.logo-heading').addEventListener('pageshow' , function(event) {
@@ -43,8 +40,9 @@ nav[0].addEventListener('mouseover', function (event) {
 
 })  
 
+const mywindow = document.querySelector('.intro p');
 window.addEventListener('resize', function (event) {
- event.target.style.fontSize = '100px;';
+mywindow.style.fontSize = '100px'
 })     
 
 
