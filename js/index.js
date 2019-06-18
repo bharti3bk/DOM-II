@@ -17,26 +17,25 @@ nav[0].addEventListener('mouseover', function (event) {
   
  })    
  window.addEventListener('scroll', function(event) {
-     this.window.alert("you are scrolling");
- })
+     window.alert("you are scrolling");   
+ })  
 
 
 
 
 
+ document.querySelector('body').addEventListener('keydown' , function (event){
+     event.targrt.style.background = 'aqua'; 
+ })  
 
-
-
-
-
-
-
-
-
- 
  document.querySelector('.logo-heading').addEventListener('pageshow' , function(event) {
      event.target.style.color = "lightpink";
  })
+
+
+ document.querySelector('body').addEventListener('keyup' , function (event){
+    event.targrt.style.background = 'aqua'; 
+})
 
 
  document.querySelector('.destination h4').addEventListener('select' ,function (event) {
